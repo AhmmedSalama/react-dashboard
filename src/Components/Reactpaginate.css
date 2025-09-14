@@ -1,0 +1,40 @@
+.react-paginate-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  gap: 6px;
+  padding: 0;
+  margin: 0;
+}
+
+.page-item .page-link {
+  border-radius: 6px;
+  padding: 6px 10px;
+  border: 1px solid #e0e0e0;
+  color: #191919;
+  background: #fff;
+  cursor: pointer;
+}
+
+.page-item.active .page-link,
+.page-item .page-link.active {
+  background: #191919;
+  color: #fff;
+  border-color: #191919;
+}
+
+.disabled .page-link,
+.page-item.disabled .page-link {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.page-item .break {
+  padding: 6px 10px;
+  color: #666;
+}

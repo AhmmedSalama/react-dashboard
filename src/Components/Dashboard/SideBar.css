@@ -1,0 +1,89 @@
+.SideBar {
+  min-height: 100vh;
+  overflow-x: hidden;
+  white-space: nowrap;
+  transition: width 0.3s ease, left 0.3s ease;
+  padding: 10px;
+  background: #f8f9fa;
+  position: fixed;
+  top: 58px;
+  left: 0;
+  z-index: 1000;
+}
+
+/* مقفول */
+.SideBar.closed { width: 60px; }
+
+/* مفتوح */
+.SideBar.open { width: 240px; }
+
+/* الروابط */
+.SideBar a {
+  text-decoration: none;
+  transition: color 0.3s, background-color 0.3s;
+  padding: 10px 8px 10px 15px;
+  color: rgba(0,0,0,0.758);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.SideBar a:hover:not(.active) {
+  color: black;
+  background-color: rgba(0,0,0,0.05);
+}
+
+.SideBar .active {
+  background-color: #f2f3fe;
+  color: #038edc;
+}
+
+.SideBar .link-text { display: none; }
+.SideBar.open .link-text { display: inline; }
+
+/* زر الترس */
+.sidebar-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  color: #444;
+  cursor: pointer;
+}
+
+/* المحتوى على اليمين */
+.main-content {
+  margin-left: 240px; /* نفس عرض السايد بار المفتوح */
+  transition: margin-left 0.3s ease;
+  padding: 20px;
+}
+
+/* لو السايد بار مقفول */
+.SideBar.closed + .main-content { margin-left: 60px; }
+
+/* الموبايل */
+@media (max-width: 768px) {
+  .SideBar {
+    top: 58px;
+    height: 100vh;
+  }
+
+  .main-content {
+    margin-left: 0; /* المحتوى تحت السايد بار */
+  }
+
+  .SideBar.open + .main-content {
+    margin-left: 0;
+  }
+
+  /* Overlay */
+  .sidebar-overlay {
+    position: fixed;
+    top: 58px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 58px);
+    background: rgba(0,0,0,0.3);
+    z-index: 900;
+  }
+}

@@ -1,0 +1,62 @@
+/* Form.css */
+
+.form-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #f1f1f1; /* خلفية فاتحة */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  margin-top: 150px;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #2a2a2a;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #2a2a2a;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1rem;
+  color: #2a2a2a;
+}
+
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: none;
+}
+
+.btn-custom {
+  background-color: #191919; /* أسود داكن */
+  color: #ffffff; /* نص أبيض */
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  width: 100%;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-custom:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+
+.WrongMassage {
+  color: #d9534f;
+  text-align: center;
+  font-size: 0.9rem; 
+  font-weight: 500; 
+  margin-bottom: 0.8rem; 
+  background-color: #fdecea; 
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #f5c6cb; 
+}
+
