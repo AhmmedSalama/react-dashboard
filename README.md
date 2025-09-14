@@ -62,6 +62,7 @@ react-dashboard/
  ┣ 📂 src/             # Main source code
  ┃ ┣ 📂 Auth/          # Login & authentication components
  ┃ ┣ 📂 Components/    # Reusable UI components
+ ┃ ┣ 📂 Pages/         # Application pages
  ┃ ┣ 📂 Apis/          # API configuration
  ┃ ┗ index.js
  ┣ .gitignore
