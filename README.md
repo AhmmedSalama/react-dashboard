@@ -28,7 +28,7 @@ bash
 npm start
 👉 The app will be available at: http://localhost:3000
 
-📦 Production Build
+##📦 Production Build
 To create an optimized production build:
 
 bash
@@ -36,7 +36,7 @@ bash
 npm run build
 This generates a build/ folder ready for deployment.
 
-🌐 Deployment (Vercel)
+##🌐 Deployment (Vercel)
 When deploying to Vercel, use the following settings:
 
 Build Command: npm run build
@@ -47,7 +47,7 @@ Install Command: npm install
 
 ⚠️ Tip: If you face npm error code E404, delete the package-lock.json file and redeploy.
 
-📂 Project Structure
+## 📂 Project Structure
 csharp
 نسخ الكود
 react-dashboard/
@@ -61,17 +61,17 @@ react-dashboard/
  ┣ package.json
  ┗ README.md
 ✨ Features
-🔐 Authentication with Backendless (login, token stored in cookies).
+##🔐 Authentication with Backendless (login, token stored in cookies).
 
-📊 CRUD operations for Clients, Products, and Orders.
+##📊 CRUD operations for Clients, Products, and Orders.
 
-🔎 Search & Pagination in tables.
+##🔎 Search & Pagination in tables.
 
-🎨 Styled with Bootstrap for a clean, responsive UI.
+##🎨 Styled with Bootstrap for a clean, responsive UI.
 
-⚡ Deployed live on Vercel.
+##⚡ Deployed live on Vercel.
 
-🛠️ Tech Stack
+##🛠️ Tech Stack
 Frontend: React.js, Bootstrap
 
 State Management: React Hooks
@@ -82,7 +82,7 @@ Deployment: Vercel
 
 Version Control: Git & GitHub
 
-📌 Evaluation Highlights
+##📌 Evaluation Highlights
 ✅ Clean and reusable code structure.
 
 ✅ API integration with error handling and loading states.
@@ -91,5 +91,5 @@ Version Control: Git & GitHub
 
 ✅ Ready-to-deploy production setup.
 
-👨‍💻 Author
+## 👨‍💻 Author
 Built with ❤️ by Ahmed Salama
